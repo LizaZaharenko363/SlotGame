@@ -52,14 +52,17 @@ function play(){
     else
         document.getElementById('nine').src = "img/"+0+".jpg";
 
-
+    if(num1==num2&&num2==num3){
+        setTimeout(() => alert("You won:)"));
+        attempt = 0;
+    } 
     if(attempt==3){
             if(num1==num2&&num2==num3){
-                alert("You won:)");
+                setTimeout(() => alert("You won:)"));
             } else {
-                alert("You lost:(");
+                setTimeout(() => alert("You lost:("));
             }
-            attempt = 0;
+        attempt = 0;
      }
     attempt++;
 }
