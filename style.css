@@ -1,0 +1,131 @@
+* {margin: 0; padding: 0;}
+
+body{
+    background-color: #93B9C1;
+    height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+h1{
+    color: #2E3F5D;
+    text-align: center; 
+    font-size: 2.5em;
+    margin-top: 3vh;
+}
+h2{
+    color: #2E3F5D;
+    text-align: center; 
+    font-size: 2em;
+    margin: 2vh;
+}
+img{
+    width: 130px;
+    height: 130px;
+}
+div.inline { 
+    float:left; 
+    background-color: darkseagreen;
+    width: 130px;
+    height: 130px;
+    border: 2px solid black;
+}
+.clearBoth { 
+    clear:both; 
+}
+.content{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.square{
+    position: relative;
+    height:400px;
+}
+.squareContent{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    position: relative;
+    height:150px;
+}
+.buttonout{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button{
+    background-color: #2E3F5D;
+    border: none;
+    border-radius: 20px;
+    color: #DBE5E7;
+    padding: 5vh 8vw;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    .content{
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .content{
+        max-width: 950px;
+    } 
+    .button{
+        min-height: 13vw; 
+        width: 30vw; 
+        padding: 0%;
+    }
+}
+@media screen and (max-width: 810px) {
+    .content{
+        max-width: 700px;
+    }
+    div.inline { 
+        width:90px;
+        height:90px;
+    }
+    img{
+        width:90px;
+        height:90px;
+    }
+    .container{
+        height: 120px;
+    }
+}    
+@media screen and (max-width: 570px) {
+    .content{
+        max-width: none;
+    }
+    .buttonout{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .button{
+        font-size: 1.5em;
+    }
+    .container{
+        height: 100px;
+    }
+    .squareContent{
+        font-size: 0;
+    }
+    .square{
+        white-space: nowrap;
+    }
+    div .inline{
+        float:none;
+        display: inline-block;
+        font-size: 0px;
+    }
+}

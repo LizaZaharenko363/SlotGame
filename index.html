@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slot machine game</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body onload="startpage()">
+    <div class="content">
+        <h1 id="player">Good luck Player!</h1>
+        <h2 id ="attempts">Attempt 1 of 3</h2>
+        <div>      
+            <div class="container">
+                <div class="buttonout">
+                    <button class="button" onclick="play()">Generate</button>
+                </div>
+            </div> 
+            <div class="square">
+                <div class="squareContent">
+                    <div class="inline"><img id="one"></img></div> <div class="inline"><img id="two"></img></div> <div class="inline"><img id="three"></img></div>
+                    <br class="clearBoth" />
+                    <div class="inline"><img id="four"></img></div> <div class="inline"><img id="five"></img></div> <div class="inline"><img id="six"></img></div>
+                    <br class="clearBoth" />
+                    <div class="inline"><img id="seven"></img></div> <div class="inline"><img id="eight"></img></div> <div class="inline"><img id="nine"></img></div>
+                    <br class="clearBoth" />
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
